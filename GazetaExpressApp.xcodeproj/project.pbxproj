@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026548D12521FC330024B609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D02521FC330024B609 /* AppDelegate.swift */; };
+		026548D32521FC330024B609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D22521FC330024B609 /* SceneDelegate.swift */; };
+		026548D52521FC330024B609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D42521FC330024B609 /* ViewController.swift */; };
+		026548D82521FC330024B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026548D62521FC330024B609 /* Main.storyboard */; };
+		026548DB2521FC330024B609 /* GazetaExpressApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */; };
+		026548DD2521FC370024B609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026548DC2521FC370024B609 /* Assets.xcassets */; };
+		026548E02521FC370024B609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026548DE2521FC370024B609 /* LaunchScreen.storyboard */; };
+		026548EB2521FC370024B609 /* GazetaExpressAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548EA2521FC370024B609 /* GazetaExpressAppTests.swift */; };
+		026548F62521FC370024B609 /* GazetaExpressAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548F52521FC370024B609 /* GazetaExpressAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		026548E72521FC370024B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 026548C52521FC320024B609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 026548CC2521FC330024B609;
+			remoteInfo = GazetaExpressApp;
+		};
+		026548F22521FC370024B609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 026548C52521FC320024B609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 026548CC2521FC330024B609;
+			remoteInfo = GazetaExpressApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026548CD2521FC330024B609 /* GazetaExpressApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GazetaExpressApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		026548D02521FC330024B609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		026548D22521FC330024B609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		026548D42521FC330024B609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		026548D72521FC330024B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		026548DA2521FC330024B609 /* GazetaExpressApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GazetaExpressApp.xcdatamodel; sourceTree = "<group>"; };
+		026548DC2521FC370024B609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		026548DF2521FC370024B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		026548E12521FC370024B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026548E62521FC370024B609 /* GazetaExpressAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GazetaExpressAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026548EA2521FC370024B609 /* GazetaExpressAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GazetaExpressAppTests.swift; sourceTree = "<group>"; };
+		026548EC2521FC370024B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026548F12521FC370024B609 /* GazetaExpressAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GazetaExpressAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026548F52521FC370024B609 /* GazetaExpressAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GazetaExpressAppUITests.swift; sourceTree = "<group>"; };
+		026548F72521FC370024B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026548CA2521FC330024B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548E32521FC370024B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548EE2521FC370024B609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026548C42521FC320024B609 = {
+			isa = PBXGroup;
+			children = (
+				026548CF2521FC330024B609 /* GazetaExpressApp */,
+				026548E92521FC370024B609 /* GazetaExpressAppTests */,
+				026548F42521FC370024B609 /* GazetaExpressAppUITests */,
+				026548CE2521FC330024B609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		026548CE2521FC330024B609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				026548CD2521FC330024B609 /* GazetaExpressApp.app */,
+				026548E62521FC370024B609 /* GazetaExpressAppTests.xctest */,
+				026548F12521FC370024B609 /* GazetaExpressAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		026548CF2521FC330024B609 /* GazetaExpressApp */ = {
+			isa = PBXGroup;
+			children = (
+				026548D02521FC330024B609 /* AppDelegate.swift */,
+				026548D22521FC330024B609 /* SceneDelegate.swift */,
+				026548D42521FC330024B609 /* ViewController.swift */,
+				026548D62521FC330024B609 /* Main.storyboard */,
+				026548DC2521FC370024B609 /* Assets.xcassets */,
+				026548DE2521FC370024B609 /* LaunchScreen.storyboard */,
+				026548E12521FC370024B609 /* Info.plist */,
+				026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */,
+			);
+			path = GazetaExpressApp;
+			sourceTree = "<group>";
+		};
+		026548E92521FC370024B609 /* GazetaExpressAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				026548EA2521FC370024B609 /* GazetaExpressAppTests.swift */,
+				026548EC2521FC370024B609 /* Info.plist */,
+			);
+			path = GazetaExpressAppTests;
+			sourceTree = "<group>";
+		};
+		026548F42521FC370024B609 /* GazetaExpressAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				026548F52521FC370024B609 /* GazetaExpressAppUITests.swift */,
+				026548F72521FC370024B609 /* Info.plist */,
+			);
+			path = GazetaExpressAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		026548CC2521FC330024B609 /* GazetaExpressApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026548FA2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressApp" */;
+			buildPhases = (
+				026548C92521FC330024B609 /* Sources */,
+				026548CA2521FC330024B609 /* Frameworks */,
+				026548CB2521FC330024B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GazetaExpressApp;
+			productName = GazetaExpressApp;
+			productReference = 026548CD2521FC330024B609 /* GazetaExpressApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		026548E52521FC370024B609 /* GazetaExpressAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026548FD2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppTests" */;
+			buildPhases = (
+				026548E22521FC370024B609 /* Sources */,
+				026548E32521FC370024B609 /* Frameworks */,
+				026548E42521FC370024B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				026548E82521FC370024B609 /* PBXTargetDependency */,
+			);
+			name = GazetaExpressAppTests;
+			productName = GazetaExpressAppTests;
+			productReference = 026548E62521FC370024B609 /* GazetaExpressAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		026548F02521FC370024B609 /* GazetaExpressAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026549002521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppUITests" */;
+			buildPhases = (
+				026548ED2521FC370024B609 /* Sources */,
+				026548EE2521FC370024B609 /* Frameworks */,
+				026548EF2521FC370024B609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				026548F32521FC370024B609 /* PBXTargetDependency */,
+			);
+			name = GazetaExpressAppUITests;
+			productName = GazetaExpressAppUITests;
+			productReference = 026548F12521FC370024B609 /* GazetaExpressAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		026548C52521FC320024B609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = GazetaExpress;
+				TargetAttributes = {
+					026548CC2521FC330024B609 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					026548E52521FC370024B609 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 026548CC2521FC330024B609;
+					};
+					026548F02521FC370024B609 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 026548CC2521FC330024B609;
+					};
+				};
+			};
+			buildConfigurationList = 026548C82521FC320024B609 /* Build configuration list for PBXProject "GazetaExpressApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 026548C42521FC320024B609;
+			productRefGroup = 026548CE2521FC330024B609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				026548CC2521FC330024B609 /* GazetaExpressApp */,
+				026548E52521FC370024B609 /* GazetaExpressAppTests */,
+				026548F02521FC370024B609 /* GazetaExpressAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		026548CB2521FC330024B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026548E02521FC370024B609 /* LaunchScreen.storyboard in Resources */,
+				026548DD2521FC370024B609 /* Assets.xcassets in Resources */,
+				026548D82521FC330024B609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548E42521FC370024B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548EF2521FC370024B609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026548C92521FC330024B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026548DB2521FC330024B609 /* GazetaExpressApp.xcdatamodeld in Sources */,
+				026548D52521FC330024B609 /* ViewController.swift in Sources */,
+				026548D12521FC330024B609 /* AppDelegate.swift in Sources */,
+				026548D32521FC330024B609 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548E22521FC370024B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026548EB2521FC370024B609 /* GazetaExpressAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026548ED2521FC370024B609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026548F62521FC370024B609 /* GazetaExpressAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		026548E82521FC370024B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 026548CC2521FC330024B609 /* GazetaExpressApp */;
+			targetProxy = 026548E72521FC370024B609 /* PBXContainerItemProxy */;
+		};
+		026548F32521FC370024B609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 026548CC2521FC330024B609 /* GazetaExpressApp */;
+			targetProxy = 026548F22521FC370024B609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		026548D62521FC330024B609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026548D72521FC330024B609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		026548DE2521FC370024B609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026548DF2521FC370024B609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		026548F82521FC370024B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		026548F92521FC370024B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		026548FB2521FC370024B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		026548FC2521FC370024B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		026548FE2521FC370024B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GazetaExpressApp.app/GazetaExpressApp";
+			};
+			name = Debug;
+		};
+		026548FF2521FC370024B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GazetaExpressApp.app/GazetaExpressApp";
+			};
+			name = Release;
+		};
+		026549012521FC370024B609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GazetaExpressApp;
+			};
+			name = Debug;
+		};
+		026549022521FC370024B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GazetaExpressAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GazetaExpressApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		026548C82521FC320024B609 /* Build configuration list for PBXProject "GazetaExpressApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026548F82521FC370024B609 /* Debug */,
+				026548F92521FC370024B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026548FA2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026548FB2521FC370024B609 /* Debug */,
+				026548FC2521FC370024B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026548FD2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026548FE2521FC370024B609 /* Debug */,
+				026548FF2521FC370024B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026549002521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026549012521FC370024B609 /* Debug */,
+				026549022521FC370024B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				026548DA2521FC330024B609 /* GazetaExpressApp.xcdatamodel */,
+			);
+			currentVersion = 026548DA2521FC330024B609 /* GazetaExpressApp.xcdatamodel */;
+			path = GazetaExpressApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 026548C52521FC320024B609 /* Project object */;
+}
