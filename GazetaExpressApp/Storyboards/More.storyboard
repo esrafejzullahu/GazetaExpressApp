@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LTE-fc-BW6">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--More View Controller-->
+        <scene sceneID="rh5-Je-b07">
+            <objects>
+                <viewController id="LKK-E4-061" customClass="MoreViewController" customModule="GazetaExpressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTt-ot-gpu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TRc-F7-AyG">
+                                <rect key="frame" x="0.0" y="200" width="414" height="536"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moreItemCell" rowHeight="64" id="NLG-Tw-q2x" customClass="MoreTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NLG-Tw-q2x" id="L2e-ZR-vRT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z3-7X-bug">
+                                                    <rect key="frame" x="45.999999999999993" y="22" width="97.333333333333314" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8z3-7X-bug" firstAttribute="centerY" secondItem="L2e-ZR-vRT" secondAttribute="centerY" id="A2s-Rv-Bvq"/>
+                                                <constraint firstItem="8z3-7X-bug" firstAttribute="leading" secondItem="L2e-ZR-vRT" secondAttribute="leadingMargin" constant="26" id="gyk-4U-xfc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="moreLabel" destination="8z3-7X-bug" id="eTa-Ew-apv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazeta-express-1" translatesAutoresizingMaskIntoConstraints="NO" id="X7Y-1P-GuC">
+                                <rect key="frame" x="92" y="123" width="230" height="42"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rOw-Vo-Ky9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TRc-F7-AyG" firstAttribute="leading" secondItem="rOw-Vo-Ky9" secondAttribute="leading" id="4fg-cb-G84"/>
+                            <constraint firstItem="X7Y-1P-GuC" firstAttribute="centerX" secondItem="mTt-ot-gpu" secondAttribute="centerX" id="9fc-kG-T5w"/>
+                            <constraint firstItem="rOw-Vo-Ky9" firstAttribute="bottom" secondItem="TRc-F7-AyG" secondAttribute="bottom" id="CKZ-LZ-Vk6"/>
+                            <constraint firstItem="X7Y-1P-GuC" firstAttribute="top" secondItem="rOw-Vo-Ky9" secondAttribute="top" constant="79" id="MTG-ju-pjv"/>
+                            <constraint firstItem="TRc-F7-AyG" firstAttribute="top" secondItem="X7Y-1P-GuC" secondAttribute="bottom" constant="35" id="eD8-cR-DHr"/>
+                            <constraint firstItem="rOw-Vo-Ky9" firstAttribute="trailing" secondItem="TRc-F7-AyG" secondAttribute="trailing" id="t8w-th-Yih"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eqE-1E-6V4"/>
+                    <connections>
+                        <outlet property="moreTableView" destination="TRc-F7-AyG" id="COP-4y-cPa"/>
+                        <segue destination="8Tz-Ai-7rD" kind="show" identifier="goToMoreOpened" id="qIl-hs-FoD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6M1-99-rT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134.78260869565219" y="-92.119565217391312"/>
+        </scene>
+        <!--  -->
+        <scene sceneID="hLY-cC-c1J">
+            <objects>
+                <viewController id="8Tz-Ai-7rD" customClass="MoreOpenedViewController" customModule="GazetaExpressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gbE-dt-fZI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcL-cc-2QT">
+                                <rect key="frame" x="20" y="64" width="55" height="24"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-58-QAj">
+                                <rect key="frame" x="20" y="108" width="374" height="588"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="Raleway-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9sw-PT-XyQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oe0-58-QAj" firstAttribute="top" secondItem="wcL-cc-2QT" secondAttribute="bottom" constant="20" id="17X-gj-vLs"/>
+                            <constraint firstItem="9sw-PT-XyQ" firstAttribute="bottom" secondItem="Oe0-58-QAj" secondAttribute="bottom" constant="40" id="BKE-y5-xQB"/>
+                            <constraint firstItem="wcL-cc-2QT" firstAttribute="leading" secondItem="9sw-PT-XyQ" secondAttribute="leading" constant="20" id="QR8-1X-n9q"/>
+                            <constraint firstItem="Oe0-58-QAj" firstAttribute="leading" secondItem="9sw-PT-XyQ" secondAttribute="leading" constant="20" id="bey-c9-v4R"/>
+                            <constraint firstItem="wcL-cc-2QT" firstAttribute="top" secondItem="9sw-PT-XyQ" secondAttribute="top" constant="20" id="lv7-TZ-4Im"/>
+                            <constraint firstItem="9sw-PT-XyQ" firstAttribute="trailing" secondItem="Oe0-58-QAj" secondAttribute="trailing" constant="20" id="ydf-aW-Iz1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="  " id="vu9-rm-p3h"/>
+                    <connections>
+                        <outlet property="settingsDescTextView" destination="Oe0-58-QAj" id="XyR-x4-W64"/>
+                        <outlet property="settingsNameLabel" destination="wcL-cc-2QT" id="E0P-gJ-jOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xv6-Cf-jLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672.46376811594212" y="-92.119565217391312"/>
+        </scene>
+        <!--Më shumë-->
+        <scene sceneID="pp3-Gs-V4v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LTE-fc-BW6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Më shumë" image="circle.grid.2x2" catalog="system" selectedImage="circle.grid.2x2.fill" id="rDy-Nu-xpJ">
+                        <color key="badgeColor" red="1" green="0.13238170739999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="heb-Ej-7RR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LKK-E4-061" kind="relationship" relationship="rootViewController" id="381-b1-mKo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grr-oU-dgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1042.0289855072465" y="-92.119565217391312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
+        <image name="gazeta-express-1" width="230.33700561523438" height="42.839000701904297"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

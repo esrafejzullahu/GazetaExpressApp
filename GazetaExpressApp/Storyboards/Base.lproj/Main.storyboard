@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bMa-da-xHL">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TopStories-->
+        <scene sceneID="z4T-lr-bKq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TopStories" id="OlB-3l-Xb3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top Stores" image="doc.append" catalog="system" selectedImage="doc.append.fill" id="iQw-WO-B7T">
+                        <color key="badgeColor" red="1" green="0.13238170739999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="xxI-Aq-L8X"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8g-ej-Txe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="342"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="a8n-nz-yr1">
+            <objects>
+                <tabBarController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bMa-da-xHL" customClass="MainViewController" customModule="GazetaExpressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jlv-uo-vUB"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="1T9-P9-tmX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.13238170739999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OlB-3l-Xb3" kind="relationship" relationship="viewControllers" id="GdT-sw-aZZ"/>
+                        <segue destination="sTo-b1-4xc" kind="relationship" relationship="viewControllers" id="JHU-vo-0Yx"/>
+                        <segue destination="AL3-Xc-SPt" kind="relationship" relationship="viewControllers" id="TiD-Xz-luV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGF-N6-eXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="-92"/>
+        </scene>
+        <!--Watch-->
+        <scene sceneID="Sg1-y4-pq4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Watch" id="sTo-b1-4xc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Watch" image="video" catalog="system" selectedImage="video.fill" id="ttt-j6-I5F">
+                        <color key="badgeColor" red="1" green="0.13238170739999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtV-zX-xgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="342"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="dVv-g4-i4e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="More" id="AL3-Xc-SPt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Më shumë" image="circle.grid.2x2" catalog="system" selectedImage="circle.grid.2x2.fill" id="m93-6M-JVu">
+                        <color key="badgeColor" red="1" green="0.23129475120000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1b-NE-YRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mxt-Xy-Q0V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iCE-RV-F8d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iCd-Ls-p7x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50D-mZ-AEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942.02898550724649" y="-92.119565217391312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
+        <image name="doc.append" catalog="system" width="115" height="128"/>
+        <image name="doc.append.fill" catalog="system" width="115" height="128"/>
+        <image name="video" catalog="system" width="128" height="83"/>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
+    </resources>
+</document>

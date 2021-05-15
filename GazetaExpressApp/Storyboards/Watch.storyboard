@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yf6-rr-02h">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-ExtraBold.ttf">
+            <string>Raleway-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Video-->
+        <scene sceneID="rxh-ho-lZB">
+            <objects>
+                <viewController id="Yf6-rr-02h" customClass="WatchViewController" customModule="GazetaExpressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UpK-z8-k1H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-nW-hDb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <color key="backgroundColor" red="0.72606927160000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OT2-6t-iZJ">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrL-WV-cUo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1486"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIDEOT E FUNDIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-po-Qat">
+                                                <rect key="frame" x="14" y="20" width="126" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.71811980009999998" green="0.0" blue="0.044457040730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="PRESSING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fa-RQ-1mS">
+                                                <rect key="frame" x="14" y="266" width="74" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.71811980009999998" green="0.0" blue="0.044457040730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wx-ji-lNG" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="292" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="ciu-pQ-hMh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijg-4p-6yp" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="46" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="Re0-se-JR3"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-UJ-rSY" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="538" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="yKv-5S-CtB"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="LAJMET QËNDRORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO4-uu-ayc">
+                                                <rect key="frame" x="14" y="512" width="144" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.71811980009999998" green="0.0" blue="0.044457040730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="#GJESI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ll-so-ZMa">
+                                                <rect key="frame" x="14" y="758" width="53" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.72606927160000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-lF-Qcc" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="784" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="f0h-lD-cbZ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENDIMI PËR MOTIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-mM-p37">
+                                                <rect key="frame" x="14" y="1004" width="151" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.72606927160000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5l-4t-WII" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="1030" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="HGo-Dv-43l"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPRESS ROZË" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-0f-OvI">
+                                                <rect key="frame" x="14" y="1250" width="109" height="18"/>
+                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="15"/>
+                                                <color key="textColor" red="0.72606927160000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-4L-VeS" customClass="WKYTPlayerView">
+                                                <rect key="frame" x="0.0" y="1276" width="414" height="190"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="K6W-Hh-gCI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="LTa-0f-OvI" firstAttribute="top" secondItem="l5l-4t-WII" secondAttribute="bottom" constant="30" id="26d-mP-usJ"/>
+                                            <constraint firstItem="ijg-4p-6yp" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="316-NI-dGW"/>
+                                            <constraint firstItem="9Wx-ji-lNG" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="5Ar-l8-154"/>
+                                            <constraint firstItem="LTa-0f-OvI" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="5Qk-2H-kiC"/>
+                                            <constraint firstItem="9Wx-ji-lNG" firstAttribute="top" secondItem="1Fa-RQ-1mS" secondAttribute="bottom" constant="8" id="9bF-BM-y5T"/>
+                                            <constraint firstAttribute="bottom" secondItem="ITe-4L-VeS" secondAttribute="bottom" constant="20" id="DT7-Dk-3z1"/>
+                                            <constraint firstAttribute="trailing" secondItem="ijg-4p-6yp" secondAttribute="trailing" id="KpF-zy-RIq"/>
+                                            <constraint firstItem="ae8-UJ-rSY" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="Nq8-iE-Zrb"/>
+                                            <constraint firstItem="ijg-4p-6yp" firstAttribute="top" secondItem="fYb-po-Qat" secondAttribute="bottom" constant="8" id="OjL-Li-6KI"/>
+                                            <constraint firstItem="l5l-4t-WII" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="Pob-Wb-9Mf"/>
+                                            <constraint firstItem="y7e-lF-Qcc" firstAttribute="top" secondItem="0Ll-so-ZMa" secondAttribute="bottom" constant="8" id="Q5t-hz-jWI"/>
+                                            <constraint firstItem="VWy-mM-p37" firstAttribute="top" secondItem="y7e-lF-Qcc" secondAttribute="bottom" constant="30" id="QdO-xd-Etx"/>
+                                            <constraint firstItem="SO4-uu-ayc" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="Szy-8d-Tx0"/>
+                                            <constraint firstAttribute="trailing" secondItem="l5l-4t-WII" secondAttribute="trailing" id="U48-HH-1Ds"/>
+                                            <constraint firstItem="ITe-4L-VeS" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="Vg5-61-xCz"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Wx-ji-lNG" secondAttribute="trailing" id="X32-DN-DsF"/>
+                                            <constraint firstItem="1Fa-RQ-1mS" firstAttribute="top" secondItem="ijg-4p-6yp" secondAttribute="bottom" constant="30" id="XNQ-uh-b4t"/>
+                                            <constraint firstAttribute="trailing" secondItem="ae8-UJ-rSY" secondAttribute="trailing" id="bZ5-BH-SUe"/>
+                                            <constraint firstItem="y7e-lF-Qcc" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" id="cTN-tV-Tm5"/>
+                                            <constraint firstItem="fYb-po-Qat" firstAttribute="top" secondItem="jrL-WV-cUo" secondAttribute="top" constant="20" id="dHB-tO-y7g"/>
+                                            <constraint firstItem="0Ll-so-ZMa" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="dMx-pj-Omu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ITe-4L-VeS" secondAttribute="trailing" id="f6k-2J-fIu"/>
+                                            <constraint firstItem="VWy-mM-p37" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="gQd-GM-evT"/>
+                                            <constraint firstAttribute="trailing" secondItem="y7e-lF-Qcc" secondAttribute="trailing" id="kcv-QL-rww"/>
+                                            <constraint firstItem="ITe-4L-VeS" firstAttribute="top" secondItem="LTa-0f-OvI" secondAttribute="bottom" constant="8" id="mbd-tl-Tne"/>
+                                            <constraint firstItem="l5l-4t-WII" firstAttribute="top" secondItem="VWy-mM-p37" secondAttribute="bottom" constant="8" id="q3S-ry-bmd"/>
+                                            <constraint firstItem="SO4-uu-ayc" firstAttribute="top" secondItem="9Wx-ji-lNG" secondAttribute="bottom" constant="30" id="siI-3z-txs"/>
+                                            <constraint firstItem="1Fa-RQ-1mS" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="xJl-dy-yIF"/>
+                                            <constraint firstItem="fYb-po-Qat" firstAttribute="leading" secondItem="jrL-WV-cUo" secondAttribute="leading" constant="14" id="xui-s4-iLw"/>
+                                            <constraint firstItem="ae8-UJ-rSY" firstAttribute="top" secondItem="SO4-uu-ayc" secondAttribute="bottom" constant="8" id="yF0-6v-gUz"/>
+                                            <constraint firstItem="0Ll-so-ZMa" firstAttribute="top" secondItem="ae8-UJ-rSY" secondAttribute="bottom" constant="30" id="ydh-dy-P3A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="leading" secondItem="7P0-Ni-cnp" secondAttribute="leading" id="3QF-KQ-jUL"/>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="bottom" secondItem="7P0-Ni-cnp" secondAttribute="bottom" id="6iV-X2-N9P"/>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="trailing" secondItem="7P0-Ni-cnp" secondAttribute="trailing" id="Brt-KN-h71"/>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="top" secondItem="7P0-Ni-cnp" secondAttribute="top" id="Stn-C7-fDc"/>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="height" secondItem="OT2-6t-iZJ" secondAttribute="height" priority="250" id="cTx-sx-YMt"/>
+                                    <constraint firstItem="jrL-WV-cUo" firstAttribute="width" secondItem="lDa-GV-Vuh" secondAttribute="width" id="zLV-UK-YxV"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7P0-Ni-cnp"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lDa-GV-Vuh"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t7ikona" translatesAutoresizingMaskIntoConstraints="NO" id="VO3-Rg-7Zt">
+                                <rect key="frame" x="0.0" y="32" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.71811980009999998" green="0.0" blue="0.044457040730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Imc-Bc-S16"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fCI-xz-w4x"/>
+                        <constraints>
+                            <constraint firstItem="KQN-nW-hDb" firstAttribute="leading" secondItem="fCI-xz-w4x" secondAttribute="leading" id="1O8-xr-J5B"/>
+                            <constraint firstItem="OT2-6t-iZJ" firstAttribute="trailing" secondItem="fCI-xz-w4x" secondAttribute="trailing" id="4gC-gk-zRV"/>
+                            <constraint firstItem="VO3-Rg-7Zt" firstAttribute="centerX" secondItem="UpK-z8-k1H" secondAttribute="centerX" id="8cQ-Fz-eNi"/>
+                            <constraint firstItem="VO3-Rg-7Zt" firstAttribute="bottom" secondItem="KQN-nW-hDb" secondAttribute="bottom" id="SB4-87-eIF"/>
+                            <constraint firstItem="KQN-nW-hDb" firstAttribute="top" secondItem="UpK-z8-k1H" secondAttribute="top" id="UjS-Ny-hxB"/>
+                            <constraint firstItem="VO3-Rg-7Zt" firstAttribute="leading" secondItem="fCI-xz-w4x" secondAttribute="leading" id="Vmr-4M-NUN"/>
+                            <constraint firstItem="KQN-nW-hDb" firstAttribute="trailing" secondItem="fCI-xz-w4x" secondAttribute="trailing" id="X62-Xv-rsw"/>
+                            <constraint firstItem="VO3-Rg-7Zt" firstAttribute="top" secondItem="UpK-z8-k1H" secondAttribute="top" constant="32" id="XUQ-98-pgN"/>
+                            <constraint firstItem="VO3-Rg-7Zt" firstAttribute="trailing" secondItem="fCI-xz-w4x" secondAttribute="trailing" id="i7V-3A-2C9"/>
+                            <constraint firstItem="OT2-6t-iZJ" firstAttribute="bottom" secondItem="UpK-z8-k1H" secondAttribute="bottom" id="oQ3-SI-1Ym"/>
+                            <constraint firstItem="OT2-6t-iZJ" firstAttribute="leading" secondItem="fCI-xz-w4x" secondAttribute="leading" id="oz3-c0-WSI"/>
+                            <constraint firstItem="OT2-6t-iZJ" firstAttribute="top" secondItem="UpK-z8-k1H" secondAttribute="top" constant="100" id="wUt-nE-RpP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video" image="video" catalog="system" selectedImage="video.fill" id="Ja3-5f-u9B">
+                        <color key="badgeColor" red="1" green="0.13238170739999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="expressRozePlayerView" destination="ITe-4L-VeS" id="9hm-WX-hqu"/>
+                        <outlet property="lajmeQendrorePlayerView" destination="ae8-UJ-rSY" id="t0N-BI-DBO"/>
+                        <outlet property="mendimiPerMotinPlayerView" destination="l5l-4t-WII" id="ReQ-c2-CWJ"/>
+                        <outlet property="playerView" destination="y7e-lF-Qcc" id="Udk-lh-lNK"/>
+                        <outlet property="pressinguPlayerView" destination="9Wx-ji-lNG" id="9F6-dx-Ch3"/>
+                        <outlet property="videotEfunditPlayerView" destination="ijg-4p-6yp" id="g77-wQ-uai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wan-4A-Veq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128.98550724637681" y="681.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="t7ikona" width="900" height="900"/>
+        <image name="video" catalog="system" width="128" height="83"/>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

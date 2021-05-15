@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "t7ikona.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

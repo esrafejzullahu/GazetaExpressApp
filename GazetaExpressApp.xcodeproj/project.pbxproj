@@ -3,19 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021837442545C4920077385F /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021837432545C4920077385F /* SportTableViewCell.swift */; };
+		021837512545C7430077385F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021837502545C7430077385F /* Assets.xcassets */; };
+		021837592545CBB50077385F /* ShnetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021837582545CBB50077385F /* ShnetaTableViewCell.swift */; };
+		0218375E2545D1B20077385F /* RozeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218375D2545D1B20077385F /* RozeTableViewCell.swift */; };
+		022449C12574254300D8A35F /* TeTjeraOpenedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022449C02574254300D8A35F /* TeTjeraOpenedViewController.swift */; };
+		023005E925C8085F00272320 /* BallinaTeTjeraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023005E825C8085F00272320 /* BallinaTeTjeraTableViewCell.swift */; };
+		02357E912542CFFA00A58CC7 /* FrekuentuaraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02357E902542CFFA00A58CC7 /* FrekuentuaraCollectionViewCell.swift */; };
+		0247296B253E514500163BB0 /* NewsOpenedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247296A253E514500163BB0 /* NewsOpenedViewController.swift */; };
+		025A73F0257EA53200A248EE /* BallinaDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A73EF257EA53200A248EE /* BallinaDto.swift */; };
+		025A73FD257EBA3E00A248EE /* BallinaOpenedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A73FC257EBA3E00A248EE /* BallinaOpenedViewController.swift */; };
+		025A7402257FEA5C00A248EE /* MoreOpenedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A7401257FEA5B00A248EE /* MoreOpenedViewController.swift */; };
+		025A740825810E3100A248EE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 025A740725810E3100A248EE /* Realm */; };
+		025A740A25810E3100A248EE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 025A740925810E3100A248EE /* RealmSwift */; };
+		025A741025810E7A00A248EE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 025A740F25810E7A00A248EE /* SDWebImage */; };
+		025A741225810E7A00A248EE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 025A741125810E7A00A248EE /* SDWebImageMapKit */; };
+		025A741E2584F64D00A248EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 025A741D2584F64D00A248EE /* Alamofire */; };
+		025E131A253F8B87000806E5 /* TopMostReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E1319253F8B87000806E5 /* TopMostReadTableViewCell.swift */; };
+		026369DA2559DB7300BDF021 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026369D92559DB7300BDF021 /* APIManager.swift */; };
+		026369E02559E65400BDF021 /* CategoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026369DF2559E65400BDF021 /* CategoryDto.swift */; };
+		026496FA25F911DE00942E6F /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026496F925F911DE00942E6F /* NotificationService.swift */; };
+		0264970D25F9151E00942E6F /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 0264970C25F9151E00942E6F /* OneSignal */; };
 		026548D12521FC330024B609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D02521FC330024B609 /* AppDelegate.swift */; };
 		026548D32521FC330024B609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D22521FC330024B609 /* SceneDelegate.swift */; };
-		026548D52521FC330024B609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548D42521FC330024B609 /* ViewController.swift */; };
 		026548D82521FC330024B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026548D62521FC330024B609 /* Main.storyboard */; };
 		026548DB2521FC330024B609 /* GazetaExpressApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */; };
-		026548DD2521FC370024B609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026548DC2521FC370024B609 /* Assets.xcassets */; };
 		026548E02521FC370024B609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026548DE2521FC370024B609 /* LaunchScreen.storyboard */; };
 		026548EB2521FC370024B609 /* GazetaExpressAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548EA2521FC370024B609 /* GazetaExpressAppTests.swift */; };
 		026548F62521FC370024B609 /* GazetaExpressAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026548F52521FC370024B609 /* GazetaExpressAppUITests.swift */; };
+		026555C6254C4013000E681F /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026555C5254C4013000E681F /* MenuTableViewController.swift */; };
+		026555CE254C4123000E681F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026555CD254C4123000E681F /* MenuTableViewCell.swift */; };
+		026977F225FE4FEC00DCE466 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB5F2528F69700F3BBA8 /* Raleway-ExtraBold.ttf */; };
+		0269780125FE6A6F00DCE466 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0269780025FE6A6F00DCE466 /* Splash.storyboard */; };
+		0269781125FE6B9500DCE466 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269781025FE6B9500DCE466 /* SplashViewController.swift */; };
+		027CFE7E253C5D5B006F85F2 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CFE7D253C5D5B006F85F2 /* WatchViewController.swift */; };
+		0286EB4D2528BAB200F3BBA8 /* TopStories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB4C2528BAB200F3BBA8 /* TopStories.storyboard */; };
+		0286EB512528C3C100F3BBA8 /* Watch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB502528C3C100F3BBA8 /* Watch.storyboard */; };
+		0286EB552528C3E800F3BBA8 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB542528C3E800F3BBA8 /* More.storyboard */; };
+		0286EB572528C93400F3BBA8 /* TopStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286EB562528C93400F3BBA8 /* TopStoresViewController.swift */; };
+		0286EB5A2528F59D00F3BBA8 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB592528F59900F3BBA8 /* Raleway-Bold.ttf */; };
+		0286EB5C2528F5B600F3BBA8 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0286EB5B2528F5B600F3BBA8 /* Raleway-Regular.ttf */; };
+		029907C62584FAEC0080B10A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 029907C52584FAEC0080B10A /* SwiftyJSON */; };
+		029907FB258BE1710080B10A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029907FA258BE16C0080B10A /* Post.swift */; };
+		029BAC1E2547736600C890A6 /* LajmeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BAC1D2547736600C890A6 /* LajmeDetailsViewController.swift */; };
+		029BAC23254787F500C890A6 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BAC22254787F500C890A6 /* DetailsCollectionViewCell.swift */; };
+		02A50A9825322474002B5FA3 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02A50A9725322474002B5FA3 /* Raleway-Black.ttf */; };
+		02A50AAD25325F70002B5FA3 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A50AAC25325F70002B5FA3 /* MoreTableViewCell.swift */; };
+		02A50AB2253262AB002B5FA3 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A50AB1253262AB002B5FA3 /* MoreViewController.swift */; };
+		02A50AB725326B29002B5FA3 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02A50AB625326B29002B5FA3 /* Raleway-SemiBold.ttf */; };
+		02A50ABC25326E96002B5FA3 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02A50ABB25326E96002B5FA3 /* Raleway-Medium.ttf */; };
+		02D0E6072592720F002162EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0E6062592720F002162EA /* MainViewController.swift */; };
+		02EC4A3E2571864300EB12B1 /* BallinaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC4A3D2571863D00EB12B1 /* BallinaTableViewCell.swift */; };
+		02EC4A432571B94000EB12B1 /* TeTjeraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC4A422571B93F00EB12B1 /* TeTjeraTableViewCell.swift */; };
+		2237E846F44C5137AE7B2FC9 /* Pods_GazetaExpressApp_GazetaExpressAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D14B1DCB872A204360C363 /* Pods_GazetaExpressApp_GazetaExpressAppUITests.framework */; };
+		5BDDD879AC8DFDF1922E0BE3 /* Pods_GazetaExpressApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367FBB7ED04BC225AAE5EADD /* Pods_GazetaExpressApp.framework */; };
+		5E714C228E847974B8F31226 /* Pods_GazetaExpressAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94002DE25E1A28537B20763F /* Pods_GazetaExpressAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +82,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021837432545C4920077385F /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		021837502545C7430077385F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021837582545CBB50077385F /* ShnetaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShnetaTableViewCell.swift; sourceTree = "<group>"; };
+		0218375D2545D1B20077385F /* RozeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozeTableViewCell.swift; sourceTree = "<group>"; };
+		021F8F0A2577A06D00049F11 /* sq-XK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sq-XK"; path = "sq-XK.lproj/Main.strings"; sourceTree = "<group>"; };
+		022449C02574254300D8A35F /* TeTjeraOpenedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeTjeraOpenedViewController.swift; sourceTree = "<group>"; };
+		023005E825C8085F00272320 /* BallinaTeTjeraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallinaTeTjeraTableViewCell.swift; sourceTree = "<group>"; };
+		02357E902542CFFA00A58CC7 /* FrekuentuaraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrekuentuaraCollectionViewCell.swift; sourceTree = "<group>"; };
+		0247296A253E514500163BB0 /* NewsOpenedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsOpenedViewController.swift; sourceTree = "<group>"; };
+		025A73DD257C426B00A248EE /* GazetaExpressApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GazetaExpressApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		025A73EF257EA53200A248EE /* BallinaDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallinaDto.swift; sourceTree = "<group>"; };
+		025A73FC257EBA3E00A248EE /* BallinaOpenedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallinaOpenedViewController.swift; sourceTree = "<group>"; };
+		025A7401257FEA5B00A248EE /* MoreOpenedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOpenedViewController.swift; sourceTree = "<group>"; };
+		025E1319253F8B87000806E5 /* TopMostReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMostReadTableViewCell.swift; sourceTree = "<group>"; };
+		026369D92559DB7300BDF021 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		026369DF2559E65400BDF021 /* CategoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDto.swift; sourceTree = "<group>"; };
+		026496EF25F90BB700942E6F /* GazetaExpressApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GazetaExpressApp.entitlements; sourceTree = "<group>"; };
+		026496F725F911DE00942E6F /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		026496F925F911DE00942E6F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		026496FB25F911DE00942E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026548CD2521FC330024B609 /* GazetaExpressApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GazetaExpressApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026548D02521FC330024B609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026548D22521FC330024B609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		026548D42521FC330024B609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		026548D72521FC330024B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		026548DA2521FC330024B609 /* GazetaExpressApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GazetaExpressApp.xcdatamodel; sourceTree = "<group>"; };
-		026548DC2521FC370024B609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026548DF2521FC370024B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026548E12521FC370024B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026548E62521FC370024B609 /* GazetaExpressAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GazetaExpressAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,13 +115,62 @@
 		026548F12521FC370024B609 /* GazetaExpressAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GazetaExpressAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		026548F52521FC370024B609 /* GazetaExpressAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GazetaExpressAppUITests.swift; sourceTree = "<group>"; };
 		026548F72521FC370024B609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026555C5254C4013000E681F /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		026555CD254C4123000E681F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		026977F725FE4FFA00DCE466 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		026977F825FE4FFD00DCE466 /* sq-XK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sq-XK"; path = "sq-XK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0269780025FE6A6F00DCE466 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		0269781025FE6B9500DCE466 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		027CFE7D253C5D5B006F85F2 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
+		0286EB4C2528BAB200F3BBA8 /* TopStories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopStories.storyboard; sourceTree = "<group>"; };
+		0286EB502528C3C100F3BBA8 /* Watch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Watch.storyboard; sourceTree = "<group>"; };
+		0286EB542528C3E800F3BBA8 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		0286EB562528C93400F3BBA8 /* TopStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoresViewController.swift; sourceTree = "<group>"; };
+		0286EB592528F59900F3BBA8 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		0286EB5B2528F5B600F3BBA8 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		0286EB5F2528F69700F3BBA8 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		029907FA258BE16C0080B10A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		029BAC1D2547736600C890A6 /* LajmeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LajmeDetailsViewController.swift; sourceTree = "<group>"; };
+		029BAC22254787F500C890A6 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		02A50A9725322474002B5FA3 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		02A50AAC25325F70002B5FA3 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		02A50AB1253262AB002B5FA3 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		02A50AB625326B29002B5FA3 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		02A50ABB25326E96002B5FA3 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		02D0E6062592720F002162EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		02EC4A3D2571863D00EB12B1 /* BallinaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallinaTableViewCell.swift; sourceTree = "<group>"; };
+		02EC4A422571B93F00EB12B1 /* TeTjeraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeTjeraTableViewCell.swift; sourceTree = "<group>"; };
+		3679B629DA5DD6196D84A43A /* Pods-GazetaExpressAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressAppTests.release.xcconfig"; path = "Target Support Files/Pods-GazetaExpressAppTests/Pods-GazetaExpressAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		367FBB7ED04BC225AAE5EADD /* Pods_GazetaExpressApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GazetaExpressApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3771B8E60D0C1CB4004516EC /* Pods-GazetaExpressApp-GazetaExpressAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressApp-GazetaExpressAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GazetaExpressApp-GazetaExpressAppUITests/Pods-GazetaExpressApp-GazetaExpressAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94002DE25E1A28537B20763F /* Pods_GazetaExpressAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GazetaExpressAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD4BE4B9C2CD52B75470CD5 /* Pods-GazetaExpressAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GazetaExpressAppTests/Pods-GazetaExpressAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D14B1DCB872A204360C363 /* Pods_GazetaExpressApp_GazetaExpressAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GazetaExpressApp_GazetaExpressAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C410189BE87AF809F0955E69 /* Pods-GazetaExpressApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressApp.release.xcconfig"; path = "Target Support Files/Pods-GazetaExpressApp/Pods-GazetaExpressApp.release.xcconfig"; sourceTree = "<group>"; };
+		DBEFA235E4434CD0554804FA /* Pods-GazetaExpressApp-GazetaExpressAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressApp-GazetaExpressAppUITests.release.xcconfig"; path = "Target Support Files/Pods-GazetaExpressApp-GazetaExpressAppUITests/Pods-GazetaExpressApp-GazetaExpressAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E304898263867C87171895E0 /* Pods-GazetaExpressApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GazetaExpressApp.debug.xcconfig"; path = "Target Support Files/Pods-GazetaExpressApp/Pods-GazetaExpressApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		026496F425F911DE00942E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		026548CA2521FC330024B609 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025A740A25810E3100A248EE /* RealmSwift in Frameworks */,
+				0264970D25F9151E00942E6F /* OneSignal in Frameworks */,
+				029907C62584FAEC0080B10A /* SwiftyJSON in Frameworks */,
+				025A741E2584F64D00A248EE /* Alamofire in Frameworks */,
+				025A741225810E7A00A248EE /* SDWebImageMapKit in Frameworks */,
+				025A740825810E3100A248EE /* Realm in Frameworks */,
+				025A741025810E7A00A248EE /* SDWebImage in Frameworks */,
+				5BDDD879AC8DFDF1922E0BE3 /* Pods_GazetaExpressApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E714C228E847974B8F31226 /* Pods_GazetaExpressAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +186,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2237E846F44C5137AE7B2FC9 /* Pods_GazetaExpressApp_GazetaExpressAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0206049F4A9133D0D93D4498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E304898263867C87171895E0 /* Pods-GazetaExpressApp.debug.xcconfig */,
+				C410189BE87AF809F0955E69 /* Pods-GazetaExpressApp.release.xcconfig */,
+				3771B8E60D0C1CB4004516EC /* Pods-GazetaExpressApp-GazetaExpressAppUITests.debug.xcconfig */,
+				DBEFA235E4434CD0554804FA /* Pods-GazetaExpressApp-GazetaExpressAppUITests.release.xcconfig */,
+				ADD4BE4B9C2CD52B75470CD5 /* Pods-GazetaExpressAppTests.debug.xcconfig */,
+				3679B629DA5DD6196D84A43A /* Pods-GazetaExpressAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0218373F2545C3B70077385F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0218375D2545D1B20077385F /* RozeTableViewCell.swift */,
+				02A50AAC25325F70002B5FA3 /* MoreTableViewCell.swift */,
+				025E1319253F8B87000806E5 /* TopMostReadTableViewCell.swift */,
+				02357E902542CFFA00A58CC7 /* FrekuentuaraCollectionViewCell.swift */,
+				021837432545C4920077385F /* SportTableViewCell.swift */,
+				021837582545CBB50077385F /* ShnetaTableViewCell.swift */,
+				029BAC22254787F500C890A6 /* DetailsCollectionViewCell.swift */,
+				026555CD254C4123000E681F /* MenuTableViewCell.swift */,
+				02EC4A3D2571863D00EB12B1 /* BallinaTableViewCell.swift */,
+				02EC4A422571B93F00EB12B1 /* TeTjeraTableViewCell.swift */,
+				023005E825C8085F00272320 /* BallinaTeTjeraTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		025A73DC257C422E00A248EE /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				025A73DD257C426B00A248EE /* GazetaExpressApp-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		026369D82559DB4800BDF021 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				026369D92559DB7300BDF021 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		026369DE2559E63500BDF021 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				026369DF2559E65400BDF021 /* CategoryDto.swift */,
+				025A73EF257EA53200A248EE /* BallinaDto.swift */,
+				029907FA258BE16C0080B10A /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		026496F825F911DE00942E6F /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				026496F925F911DE00942E6F /* NotificationService.swift */,
+				026496FB25F911DE00942E6F /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		026548C42521FC320024B609 = {
 			isa = PBXGroup;
 			children = (
 				026548CF2521FC330024B609 /* GazetaExpressApp */,
 				026548E92521FC370024B609 /* GazetaExpressAppTests */,
 				026548F42521FC370024B609 /* GazetaExpressAppUITests */,
+				026496F825F911DE00942E6F /* OneSignalNotificationServiceExtension */,
 				026548CE2521FC330024B609 /* Products */,
+				0206049F4A9133D0D93D4498 /* Pods */,
+				B4F8D4118D24B8471B84B8B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +278,7 @@
 				026548CD2521FC330024B609 /* GazetaExpressApp.app */,
 				026548E62521FC370024B609 /* GazetaExpressAppTests.xctest */,
 				026548F12521FC370024B609 /* GazetaExpressAppUITests.xctest */,
+				026496F725F911DE00942E6F /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,12 +286,17 @@
 		026548CF2521FC330024B609 /* GazetaExpressApp */ = {
 			isa = PBXGroup;
 			children = (
+				026496EF25F90BB700942E6F /* GazetaExpressApp.entitlements */,
+				025A73DC257C422E00A248EE /* BridgingHeader */,
+				026369DE2559E63500BDF021 /* Models */,
+				026369D82559DB4800BDF021 /* APIManager */,
+				021837502545C7430077385F /* Assets.xcassets */,
+				0218373F2545C3B70077385F /* Cells */,
+				0286EB582528F56F00F3BBA8 /* Fonts */,
+				0286EB4B2528B7A200F3BBA8 /* Controllers */,
+				027E248D2524AE3B001AF8C1 /* Storyboards */,
 				026548D02521FC330024B609 /* AppDelegate.swift */,
 				026548D22521FC330024B609 /* SceneDelegate.swift */,
-				026548D42521FC330024B609 /* ViewController.swift */,
-				026548D62521FC330024B609 /* Main.storyboard */,
-				026548DC2521FC370024B609 /* Assets.xcassets */,
-				026548DE2521FC370024B609 /* LaunchScreen.storyboard */,
 				026548E12521FC370024B609 /* Info.plist */,
 				026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */,
 			);
@@ -131,22 +321,104 @@
 			path = GazetaExpressAppUITests;
 			sourceTree = "<group>";
 		};
+		027E248D2524AE3B001AF8C1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				026548DE2521FC370024B609 /* LaunchScreen.storyboard */,
+				026548D62521FC330024B609 /* Main.storyboard */,
+				0286EB4C2528BAB200F3BBA8 /* TopStories.storyboard */,
+				0286EB502528C3C100F3BBA8 /* Watch.storyboard */,
+				0286EB542528C3E800F3BBA8 /* More.storyboard */,
+				0269780025FE6A6F00DCE466 /* Splash.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0286EB4B2528B7A200F3BBA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0286EB562528C93400F3BBA8 /* TopStoresViewController.swift */,
+				02A50AB1253262AB002B5FA3 /* MoreViewController.swift */,
+				027CFE7D253C5D5B006F85F2 /* WatchViewController.swift */,
+				0247296A253E514500163BB0 /* NewsOpenedViewController.swift */,
+				029BAC1D2547736600C890A6 /* LajmeDetailsViewController.swift */,
+				026555C5254C4013000E681F /* MenuTableViewController.swift */,
+				022449C02574254300D8A35F /* TeTjeraOpenedViewController.swift */,
+				025A73FC257EBA3E00A248EE /* BallinaOpenedViewController.swift */,
+				025A7401257FEA5B00A248EE /* MoreOpenedViewController.swift */,
+				02D0E6062592720F002162EA /* MainViewController.swift */,
+				0269781025FE6B9500DCE466 /* SplashViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0286EB582528F56F00F3BBA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				02A50ABB25326E96002B5FA3 /* Raleway-Medium.ttf */,
+				02A50AB625326B29002B5FA3 /* Raleway-SemiBold.ttf */,
+				0286EB5F2528F69700F3BBA8 /* Raleway-ExtraBold.ttf */,
+				0286EB5B2528F5B600F3BBA8 /* Raleway-Regular.ttf */,
+				0286EB592528F59900F3BBA8 /* Raleway-Bold.ttf */,
+				02A50A9725322474002B5FA3 /* Raleway-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B4F8D4118D24B8471B84B8B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				367FBB7ED04BC225AAE5EADD /* Pods_GazetaExpressApp.framework */,
+				B1D14B1DCB872A204360C363 /* Pods_GazetaExpressApp_GazetaExpressAppUITests.framework */,
+				94002DE25E1A28537B20763F /* Pods_GazetaExpressAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		026496F625F911DE00942E6F /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026496FF25F911DE00942E6F /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				026496F325F911DE00942E6F /* Sources */,
+				026496F425F911DE00942E6F /* Frameworks */,
+				026496F525F911DE00942E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 026496F725F911DE00942E6F /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		026548CC2521FC330024B609 /* GazetaExpressApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 026548FA2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressApp" */;
 			buildPhases = (
+				75AC514BF4E564AC0B9AF1E6 /* [CP] Check Pods Manifest.lock */,
 				026548C92521FC330024B609 /* Sources */,
 				026548CA2521FC330024B609 /* Frameworks */,
 				026548CB2521FC330024B609 /* Resources */,
+				B16E5EBF0D6C5DF813F8C1C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GazetaExpressApp;
+			packageProductDependencies = (
+				025A740725810E3100A248EE /* Realm */,
+				025A740925810E3100A248EE /* RealmSwift */,
+				025A740F25810E7A00A248EE /* SDWebImage */,
+				025A741125810E7A00A248EE /* SDWebImageMapKit */,
+				025A741D2584F64D00A248EE /* Alamofire */,
+				029907C52584FAEC0080B10A /* SwiftyJSON */,
+				0264970C25F9151E00942E6F /* OneSignal */,
+			);
 			productName = GazetaExpressApp;
 			productReference = 026548CD2521FC330024B609 /* GazetaExpressApp.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +427,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 026548FD2521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppTests" */;
 			buildPhases = (
+				C4F2092FF4B581CF3E97FB3E /* [CP] Check Pods Manifest.lock */,
 				026548E22521FC370024B609 /* Sources */,
 				026548E32521FC370024B609 /* Frameworks */,
 				026548E42521FC370024B609 /* Resources */,
@@ -173,9 +446,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 026549002521FC370024B609 /* Build configuration list for PBXNativeTarget "GazetaExpressAppUITests" */;
 			buildPhases = (
+				C28F8E158AEF8A1CF637B974 /* [CP] Check Pods Manifest.lock */,
 				026548ED2521FC370024B609 /* Sources */,
 				026548EE2521FC370024B609 /* Frameworks */,
 				026548EF2521FC370024B609 /* Resources */,
+				58E03CEB997A47809CB0EC05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,12 +468,16 @@
 		026548C52521FC320024B609 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = GazetaExpress;
 				TargetAttributes = {
+					026496F625F911DE00942E6F = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					026548CC2521FC330024B609 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1220;
 					};
 					026548E52521FC370024B609 = {
 						CreatedOnToolsVersion = 11.6;
@@ -217,8 +496,16 @@
 			knownRegions = (
 				en,
 				Base,
+				"sq-XK",
 			);
 			mainGroup = 026548C42521FC320024B609;
+			packageReferences = (
+				025A740625810E3000A248EE /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				025A740E25810E7A00A248EE /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				025A741C2584F64C00A248EE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				029907C42584FAEC0080B10A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0264970B25F9151E00942E6F /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
 			productRefGroup = 026548CE2521FC330024B609 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,18 +513,36 @@
 				026548CC2521FC330024B609 /* GazetaExpressApp */,
 				026548E52521FC370024B609 /* GazetaExpressAppTests */,
 				026548F02521FC370024B609 /* GazetaExpressAppUITests */,
+				026496F625F911DE00942E6F /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		026496F525F911DE00942E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		026548CB2521FC330024B609 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026977F225FE4FEC00DCE466 /* Raleway-ExtraBold.ttf in Resources */,
+				0286EB5C2528F5B600F3BBA8 /* Raleway-Regular.ttf in Resources */,
+				0286EB5A2528F59D00F3BBA8 /* Raleway-Bold.ttf in Resources */,
+				021837512545C7430077385F /* Assets.xcassets in Resources */,
+				0286EB552528C3E800F3BBA8 /* More.storyboard in Resources */,
+				0286EB4D2528BAB200F3BBA8 /* TopStories.storyboard in Resources */,
+				0286EB512528C3C100F3BBA8 /* Watch.storyboard in Resources */,
+				02A50ABC25326E96002B5FA3 /* Raleway-Medium.ttf in Resources */,
 				026548E02521FC370024B609 /* LaunchScreen.storyboard in Resources */,
-				026548DD2521FC370024B609 /* Assets.xcassets in Resources */,
+				02A50A9825322474002B5FA3 /* Raleway-Black.ttf in Resources */,
 				026548D82521FC330024B609 /* Main.storyboard in Resources */,
+				02A50AB725326B29002B5FA3 /* Raleway-SemiBold.ttf in Resources */,
+				0269780125FE6A6F00DCE466 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +562,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58E03CEB997A47809CB0EC05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp-GazetaExpressAppUITests/Pods-GazetaExpressApp-GazetaExpressAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp-GazetaExpressAppUITests/Pods-GazetaExpressApp-GazetaExpressAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp-GazetaExpressAppUITests/Pods-GazetaExpressApp-GazetaExpressAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75AC514BF4E564AC0B9AF1E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GazetaExpressApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16E5EBF0D6C5DF813F8C1C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp/Pods-GazetaExpressApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp/Pods-GazetaExpressApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GazetaExpressApp/Pods-GazetaExpressApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28F8E158AEF8A1CF637B974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GazetaExpressApp-GazetaExpressAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F2092FF4B581CF3E97FB3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GazetaExpressAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		026496F325F911DE00942E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026496FA25F911DE00942E6F /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		026548C92521FC330024B609 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025A73F0257EA53200A248EE /* BallinaDto.swift in Sources */,
+				026555C6254C4013000E681F /* MenuTableViewController.swift in Sources */,
+				029907FB258BE1710080B10A /* Post.swift in Sources */,
+				02A50AB2253262AB002B5FA3 /* MoreViewController.swift in Sources */,
+				02D0E6072592720F002162EA /* MainViewController.swift in Sources */,
+				026555CE254C4123000E681F /* MenuTableViewCell.swift in Sources */,
+				029BAC23254787F500C890A6 /* DetailsCollectionViewCell.swift in Sources */,
 				026548DB2521FC330024B609 /* GazetaExpressApp.xcdatamodeld in Sources */,
-				026548D52521FC330024B609 /* ViewController.swift in Sources */,
+				0269781125FE6B9500DCE466 /* SplashViewController.swift in Sources */,
+				025A73FD257EBA3E00A248EE /* BallinaOpenedViewController.swift in Sources */,
+				022449C12574254300D8A35F /* TeTjeraOpenedViewController.swift in Sources */,
+				021837592545CBB50077385F /* ShnetaTableViewCell.swift in Sources */,
+				0286EB572528C93400F3BBA8 /* TopStoresViewController.swift in Sources */,
+				02EC4A3E2571864300EB12B1 /* BallinaTableViewCell.swift in Sources */,
+				027CFE7E253C5D5B006F85F2 /* WatchViewController.swift in Sources */,
+				02357E912542CFFA00A58CC7 /* FrekuentuaraCollectionViewCell.swift in Sources */,
+				029BAC1E2547736600C890A6 /* LajmeDetailsViewController.swift in Sources */,
 				026548D12521FC330024B609 /* AppDelegate.swift in Sources */,
+				0247296B253E514500163BB0 /* NewsOpenedViewController.swift in Sources */,
+				0218375E2545D1B20077385F /* RozeTableViewCell.swift in Sources */,
+				021837442545C4920077385F /* SportTableViewCell.swift in Sources */,
+				02A50AAD25325F70002B5FA3 /* MoreTableViewCell.swift in Sources */,
+				02EC4A432571B94000EB12B1 /* TeTjeraTableViewCell.swift in Sources */,
+				026369E02559E65400BDF021 /* CategoryDto.swift in Sources */,
+				023005E925C8085F00272320 /* BallinaTeTjeraTableViewCell.swift in Sources */,
+				026369DA2559DB7300BDF021 /* APIManager.swift in Sources */,
+				025E131A253F8B87000806E5 /* TopMostReadTableViewCell.swift in Sources */,
+				025A7402257FEA5C00A248EE /* MoreOpenedViewController.swift in Sources */,
 				026548D32521FC330024B609 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +746,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				026548D72521FC330024B609 /* Base */,
+				021F8F0A2577A06D00049F11 /* sq-XK */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +755,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				026548DF2521FC370024B609 /* Base */,
+				026977F725FE4FFA00DCE466 /* en */,
+				026977F825FE4FFD00DCE466 /* sq-XK */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -320,10 +764,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0264970025F911DE00942E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = DR4UE4JCU2;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gazetaexpress.gazetaexpressapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0264970125F911DE00942E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = DR4UE4JCU2;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gazetaexpress.gazetaexpressapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		026548F82521FC370024B609 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -346,6 +837,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -384,6 +876,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -406,6 +899,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -436,16 +930,27 @@
 		};
 		026548FB2521FC370024B609 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E304898263867C87171895E0 /* Pods-GazetaExpressApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GazetaExpressApp/GazetaExpressApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = DR4UE4JCU2;
 				INFOPLIST_FILE = GazetaExpressApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressApp;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gazetaexpress.gazetaexpressapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazetaExpressApp/BridgingHeader/GazetaExpressApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,16 +958,26 @@
 		};
 		026548FC2521FC370024B609 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C410189BE87AF809F0955E69 /* Pods-GazetaExpressApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GazetaExpressApp/GazetaExpressApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = DR4UE4JCU2;
 				INFOPLIST_FILE = GazetaExpressApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GazetaExpress.GazetaExpressApp;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gazetaexpress.gazetaexpressapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazetaExpressApp/BridgingHeader/GazetaExpressApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +985,7 @@
 		};
 		026548FE2521FC370024B609 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD4BE4B9C2CD52B75470CD5 /* Pods-GazetaExpressAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +1007,7 @@
 		};
 		026548FF2521FC370024B609 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3679B629DA5DD6196D84A43A /* Pods-GazetaExpressAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +1029,7 @@
 		};
 		026549012521FC370024B609 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3771B8E60D0C1CB4004516EC /* Pods-GazetaExpressApp-GazetaExpressAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +1049,7 @@
 		};
 		026549022521FC370024B609 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEFA235E4434CD0554804FA /* Pods-GazetaExpressApp-GazetaExpressAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +1070,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		026496FF25F911DE00942E6F /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0264970025F911DE00942E6F /* Debug */,
+				0264970125F911DE00942E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		026548C82521FC320024B609 /* Build configuration list for PBXProject "GazetaExpressApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -588,6 +1116,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		025A740625810E3000A248EE /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.3.0;
+			};
+		};
+		025A740E25810E7A00A248EE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+		025A741C2584F64C00A248EE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		0264970B25F9151E00942E6F /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+		029907C42584FAEC0080B10A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		025A740725810E3100A248EE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 025A740625810E3000A248EE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		025A740925810E3100A248EE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 025A740625810E3000A248EE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		025A740F25810E7A00A248EE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 025A740E25810E7A00A248EE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		025A741125810E7A00A248EE /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 025A740E25810E7A00A248EE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		025A741D2584F64D00A248EE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 025A741C2584F64C00A248EE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0264970C25F9151E00942E6F /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0264970B25F9151E00942E6F /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		029907C52584FAEC0080B10A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029907C42584FAEC0080B10A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		026548D92521FC330024B609 /* GazetaExpressApp.xcdatamodeld */ = {
