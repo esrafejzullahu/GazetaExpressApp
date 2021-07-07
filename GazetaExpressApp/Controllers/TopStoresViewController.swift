@@ -40,6 +40,7 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
     var ax: Ballina!
     let realm = try! Realm()
     var ballinaPostIDs: [Int] = []
+    var ballinapositions: [String] = []
     var frekuentuara: [Post] = []
     var sporte: [Post] = []
     var roze: [Post] = []
@@ -52,6 +53,14 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
     var sports: Results<Post>!
     var rozet: Results<Post>!
     var shnetat: Results<Post>!
+    var arte: Results<Post>!
+    var oped: Results<Post>!
+    var fun: Results<Post>!
+    var autotech: Results<Post>!
+    var shqiperi: Results<Post>!
+    var maqedoni: Results<Post>!
+    var english: Results<Post>!
+    
     
     
     override func viewDidLoad() {
@@ -70,7 +79,7 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
             getRoze()
             getShnete()
         }
-
+        
         print("This is: ", hasLaunched)
         print(Realm.Configuration.defaultConfiguration.fileURL)
         //interstitial = createAndLoadInterstitial()
@@ -79,6 +88,13 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         sports = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
         rozet = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
         shnetat = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        arte = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        oped = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        fun = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        autotech = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        shqiperi = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        maqedoni = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
+        english = realm.objects(Post.self).sorted(byKeyPath: "date", ascending: false)
         
         frekuentuara = Array(freq).filter({ frek in
             frek.categories.contains(4)
@@ -95,8 +111,22 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         a1ImageView.sd_setImage(with: URL(string: ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
         a1Label.text = ballina[0].title?.stripOutHtml()
         
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleAppDidBecomeActiveNotification(notification:)),
+                                               name: UIApplication.didBecomeActiveNotification,
+                                               object: nil)
+        
     }
     
+    @objc func handleAppDidBecomeActiveNotification(notification: Notification) {
+        getHome()
+        getFrekuentuara()
+        getSport()
+        getRoze()
+        getShnete()
+        refresh()
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         ballinaTableView.isUserInteractionEnabled = true
         topNewsTableView.isUserInteractionEnabled = true
@@ -141,12 +171,16 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.realm.beginWrite()
                 for post in self.ballinaPosts {
                     self.ax = post
-                    self.ballinaPostIDs.append(self.ax.ID)
+                    //self.ballinaPostIDs.append(self.ax.ID)
+                    self.ballinapositions.append(self.ax.position!)
                     self.realm.add(self.ax, update: .all)
                 }
                 let realmEntries = self.realm.objects(Ballina.self)
                 for entry in realmEntries {
-                    if !self.ballinaPostIDs.contains(entry.ID) {
+                    //                    if !self.ballinaPostIDs.contains(entry.ID){
+                    //                        self.realm.delete(entry)
+                    //                    }
+                    if !self.ballinapositions.contains(entry.position!) {
                         self.realm.delete(entry)
                     }
                 }
@@ -440,11 +474,11 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
             }
         } else if tableView == sportTableView {
             sportTableView.isUserInteractionEnabled = false
-//            if interstitial.isReady {
-//                interstitial.present(fromRootViewController: self)
-//            } else {
-//                print("Ad wasn't ready")
-//            }
+            //            if interstitial.isReady {
+            //                interstitial.present(fromRootViewController: self)
+            //            } else {
+            //                print("Ad wasn't ready")
+            //            }
             let post = sporte[indexPath.row]
             for _ in sporte {
                 self.post = post
@@ -465,11 +499,11 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
             
         } else if tableView == shnetaTableView {
             shnetaTableView.isUserInteractionEnabled = false
-//            if interstitial.isReady {
-//                interstitial.present(fromRootViewController: self)
-//            } else {
-//                print("Ad wasn't ready")
-//            }
+            //            if interstitial.isReady {
+            //                interstitial.present(fromRootViewController: self)
+            //            } else {
+            //                print("Ad wasn't ready")
+            //            }
             let post = shnete[indexPath.row]
             for _ in shnete {
                 self.post = post
@@ -579,7 +613,7 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         topNewsTableView.reloadData()
         frequentCollectionView.reloadData()
         refresh()
-
+        
     }
     func run(after wait: TimeInterval, closure: @escaping () -> Void) {
         let queue = DispatchQueue.main
@@ -590,6 +624,8 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         shnetaTableView.reloadData()
         topNewsTableView.reloadData()
         frequentCollectionView.reloadData()
+        a1ImageView.sd_setImage(with: URL(string: ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
+        a1Label.text = ballina[0].title?.stripOutHtml()
     }
     func refresh() {
         run(after: 2) {

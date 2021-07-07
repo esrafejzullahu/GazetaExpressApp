@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eVG-hH-3yv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eVG-hH-3yv">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -37,7 +37,7 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuItem" id="VQX-w7-WMv" customClass="MenuTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VQX-w7-WMv" id="7SB-vv-zqv">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -148,14 +148,14 @@
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ballinaCell" rowHeight="150" id="5xm-yQ-LHA" customClass="BallinaTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="150"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5xm-yQ-LHA" id="gce-2P-a0C">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT4-Tc-2er">
-                                                                    <rect key="frame" x="184" y="16" width="220" height="21.666666666666671"/>
+                                                                    <rect key="frame" x="184" y="16" width="220" height="22"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="label">
                                                                             <attributes>
@@ -199,20 +199,20 @@
                                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsMostReadCell" rowHeight="138" id="rrT-Jf-cTz" customClass="TopMostReadTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="138"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rrT-Jf-cTz" id="fdC-hv-m7G">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4s-31-YN3">
-                                                                    <rect key="frame" x="34" y="23" width="27" height="13"/>
+                                                                    <rect key="frame" x="34" y="23" width="29.666666666666671" height="13"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="11"/>
                                                                     <color key="textColor" red="0.92941176469999998" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR8-A6-mgY">
-                                                                    <rect key="frame" x="34" y="41" width="245" height="23.333333333333329"/>
+                                                                    <rect key="frame" x="34" y="41" width="245" height="23.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -291,7 +291,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edon Zhegrova apo Lionel Messi, çfarë goli të bukur ka shënuar talenti Kosovës" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWd-Wr-L1p">
-                                                                            <rect key="frame" x="77" y="11" width="201" height="93.333333333333329"/>
+                                                                            <rect key="frame" x="77" y="11" width="201" height="94"/>
                                                                             <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -369,20 +369,20 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sportCell" rowHeight="138" id="KEm-OV-ehK" customClass="SportTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="138"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KEm-OV-ehK" id="fSG-vX-f0F">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUTBOLL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-92-pnR">
-                                                                    <rect key="frame" x="34" y="23" width="49" height="13"/>
+                                                                    <rect key="frame" x="34" y="23" width="50" height="13"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="11"/>
                                                                     <color key="textColor" red="0.92941176469999998" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVW-sV-PCW">
-                                                                    <rect key="frame" x="34" y="41" width="245" height="23.333333333333329"/>
+                                                                    <rect key="frame" x="34" y="41" width="245" height="23.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -417,7 +417,7 @@
                                                 <rect key="frame" x="0.0" y="1983.6666666666665" width="414" height="37"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPW-4u-bh5">
-                                                        <rect key="frame" x="237" y="6" width="163" height="29"/>
+                                                        <rect key="frame" x="239" y="6" width="161" height="29"/>
                                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
                                                         <state key="normal" title="MË SHUMË NGA SPORTI"/>
                                                         <connections>
@@ -453,14 +453,14 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shnetaCell" rowHeight="138" id="q7U-sB-fzw" customClass="ShnetaTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="138"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q7U-sB-fzw" id="uRi-qq-VJf">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkE-ed-3en">
-                                                                    <rect key="frame" x="34" y="23" width="27" height="13"/>
+                                                                    <rect key="frame" x="34" y="23" width="29.666666666666671" height="13"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="11"/>
                                                                     <color key="textColor" red="0.92941176469999998" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -473,7 +473,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wV-Fo-ioC">
-                                                                    <rect key="frame" x="34" y="41" width="245" height="23.333333333333329"/>
+                                                                    <rect key="frame" x="34" y="41" width="245" height="23.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -498,7 +498,7 @@
                                                 </prototypes>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHNETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-Gf-Dok">
-                                                <rect key="frame" x="13.999999999999996" y="2545.6666666666665" width="57.666666666666657" height="17.666666666666515"/>
+                                                <rect key="frame" x="14.000000000000004" y="2545.6666666666665" width="59.333333333333343" height="17.666666666666515"/>
                                                 <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -519,14 +519,14 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rozeCell" rowHeight="138" id="Cxc-FE-WXB" customClass="RozeTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="138"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cxc-FE-WXB" id="JFf-uJ-unX">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfA-yh-Cn8">
-                                                                    <rect key="frame" x="34" y="23" width="27" height="13"/>
+                                                                    <rect key="frame" x="34" y="23" width="29.666666666666671" height="13"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="11"/>
                                                                     <color key="textColor" red="0.92941176469999998" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -539,7 +539,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjU-8s-3CJ">
-                                                                    <rect key="frame" x="34" y="41" width="245" height="23.333333333333329"/>
+                                                                    <rect key="frame" x="34" y="41" width="245" height="23.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -586,7 +586,7 @@
                                                 <rect key="frame" x="0.0" y="2497.6666666666665" width="414" height="37"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwv-6b-tpc">
-                                                        <rect key="frame" x="250" y="6" width="150" height="29"/>
+                                                        <rect key="frame" x="252" y="6" width="148" height="29"/>
                                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
                                                         <state key="normal" title="MË SHUMË NGA ROZË"/>
                                                         <connections>
@@ -623,7 +623,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bd-gY-rIV">
-                                                <rect key="frame" x="21" y="175" width="372" height="23.333333333333343"/>
+                                                <rect key="frame" x="21" y="175" width="372" height="23.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -828,7 +828,7 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tetjeraCell" rowHeight="90" id="RoM-V1-h93" customClass="TeTjeraTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="90"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RoM-V1-h93" id="AHN-I3-Seh">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -984,7 +984,7 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ballinaTjeraCell" rowHeight="90" id="gJW-HJ-P36" customClass="BallinaTeTjeraTableViewCell" customModule="GazetaExpressApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="90"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJW-HJ-P36" id="jhH-ge-TO5">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -1240,7 +1240,7 @@
                                             <constraint firstAttribute="height" constant="70" id="Yck-Id-gqp"/>
                                         </constraints>
                                         <connections>
-                                            <action selector="onExpressButtonTapped:" destination="D8B-mE-EuJ" eventType="touchUpInside" id="3zz-UB-Glb"/>
+                                            <action selector="onExpressButtonTapped:" destination="D8B-mE-EuJ" eventType="touchUpInside" id="tzN-og-iws"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="express_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hKv-aJ-eLJ">
@@ -1373,6 +1373,7 @@
                     <navigationItem key="navigationItem" id="iVL-90-Pd0"/>
                     <connections>
                         <outlet property="backgroundView" destination="KK5-2Q-uGn" id="a9e-VZ-qxR"/>
+                        <outlet property="expressButton" destination="fsC-EV-bqF" id="VO4-cI-Uyg"/>
                         <outlet property="lajmeDetailsCollectionView" destination="NP9-6M-ULX" id="e0T-h4-Q7v"/>
                         <outlet property="refreshButton" destination="E64-uS-m3k" id="NoB-zV-hNY"/>
                         <segue destination="7QI-FV-kVc" kind="show" identifier="goToDetail" id="0RL-X1-pmz"/>
@@ -1388,7 +1389,7 @@
         <segue reference="yXj-tv-n6E"/>
         <segue reference="Was-sW-K2e"/>
         <segue reference="deu-5j-KbM"/>
-        <segue reference="MOB-EG-gcu"/>
+        <segue reference="0RL-X1-pmz"/>
         <segue reference="CO6-eZ-1rW"/>
     </inferredMetricsTieBreakers>
     <resources>

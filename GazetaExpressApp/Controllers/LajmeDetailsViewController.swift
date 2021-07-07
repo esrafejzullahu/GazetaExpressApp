@@ -16,7 +16,8 @@ class LajmeDetailsViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var lajmeDetailsCollectionView: UICollectionView!
     @IBOutlet weak var refreshButton: UIButton!
-
+    @IBOutlet weak var expressButton: UIButton!
+    
     var category: Category!
     var viewColor: UIColor?
     let refreshControl = UIRefreshControl()
@@ -38,20 +39,20 @@ class LajmeDetailsViewController: UIViewController, UICollectionViewDelegate, UI
         postsArr = Array(posts).filter({ post in
             post.categories.contains(category.id)
         })
-
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         lajmeDetailsCollectionView.isUserInteractionEnabled = true
     }
     override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         guard let tracker = GAI.sharedInstance().defaultTracker else { return }
         tracker.set(kGAIScreenName, value: "\(self.title) ?iOS")
-
+        
         guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
         tracker.send(builder.build() as [NSObject : AnyObject])
-      navigationController?.setNavigationBarHidden(true, animated: animated)
-  }
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -91,7 +92,16 @@ class LajmeDetailsViewController: UIViewController, UICollectionViewDelegate, UI
         }
     }
     @IBAction func onExpressButtonTapped(_ sender: Any) {
-        navigationController?.popToViewController((self.navigationController?.viewControllers[1]) as! MainViewController, animated: true)
+        print("asd")
+        self.dismiss(animated:true) {
+            let st = UIStoryboard(name: "Main", bundle: nil)
+             let TabViewController = st.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
+             TabViewController.selectedIndex = 0
+             UIApplication.shared.keyWindow?.rootViewController = TabViewController
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        //navigationController?.popToViewController((self.navigationController?.viewControllers[1]) as! MainViewController, animated: true)
+        
     }
     
     func setUpCollectionView() {
@@ -144,7 +154,7 @@ class LajmeDetailsViewController: UIViewController, UICollectionViewDelegate, UI
     }
     func refresh() {
         run(after: 2) {
-           self.refreshControl.endRefreshing()
+            self.refreshControl.endRefreshing()
         }
     }
 }
@@ -152,7 +162,7 @@ extension LajmeDetailsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat =  50
         let collectionViewSize = collectionView.frame.size.width - padding
-
+        
         return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
     }
 }

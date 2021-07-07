@@ -17,7 +17,7 @@ import GoogleMobileAds
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-
+        
         guard let gai = GAI.sharedInstance() else { return false }
         
         gai.tracker(withTrackingId: "UA-6427330-1")
@@ -38,14 +38,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         gai.trackUncaughtExceptions = true
         
         
-                 //OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
-                    
-                 OneSignal.initWithLaunchOptions(launchOptions)
-                 OneSignal.setAppId("8bf09b6b-a4e6-49d8-b36d-5bbadcb02fd7")
-                 OneSignal.promptForPushNotifications(userResponse: { accepted in
-                   print("User accepted notifications: \(accepted)")
-
-                 })
+        //OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+        
+        OneSignal.initWithLaunchOptions(launchOptions)
+        OneSignal.setAppId("8bf09b6b-a4e6-49d8-b36d-5bbadcb02fd7")
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+            
+        })
         return true
     }
     

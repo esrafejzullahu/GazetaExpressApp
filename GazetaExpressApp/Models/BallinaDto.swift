@@ -20,7 +20,7 @@ class Ballina: Object, Decodable {
     @objc dynamic var position: String?
     
     override class func primaryKey() -> String? {
-        return "ID"
+        return "position"
     }
     
 }
