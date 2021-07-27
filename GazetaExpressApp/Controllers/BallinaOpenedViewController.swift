@@ -38,7 +38,7 @@ class BallinaOpenedViewController: UIViewController, UITableViewDelegate, UITabl
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(actionTapped))
         getTimeForPost()
         self.webView.navigationDelegate = self
-
+        
         let htmlString = "<head><meta name=\"viewport\" content=\"initial-scale=1, user-scalable=no, width=device-width\"/><link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'><style>body {font-family: 'Raleway';font-size: 15px;} @media (prefers-color-scheme: dark) { body {color: white;}</style></head><body>" + (ax.content ?? "") + "</body>"
         
         webView.loadHTMLString(htmlString, baseURL: nil)
@@ -50,13 +50,13 @@ class BallinaOpenedViewController: UIViewController, UITableViewDelegate, UITabl
             self.webViewHeightConstraint.constant = webView.scrollView.contentSize.height
         }
     }
-
+    
     func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: nil, completion: {_ in
-        //Reset Frame of Webview
+            //Reset Frame of Webview
             self.webView.evaluateJavaScript("location.reload();")
-   })
-   }
+        })
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         guard let tracker = GAI.sharedInstance().defaultTracker else { return }
@@ -65,7 +65,7 @@ class BallinaOpenedViewController: UIViewController, UITableViewDelegate, UITabl
         guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
         tracker.send(builder.build() as [NSObject : AnyObject])
     }
-   
+    
     func getTimeForPost() {
         let date = ax.post_date ?? ""
         let dtf = DateFormatter()
@@ -110,40 +110,40 @@ class BallinaOpenedViewController: UIViewController, UITableViewDelegate, UITabl
         }
         self.present(activityViewController, animated: true, completion: nil)
     }
-//    @objc func actionTapped(sender: UIBarButtonItem) {
-//        let firstActivityItem = postTitleLabel.text
-//        let secondActivityItem : NSURL = NSURL(string: ax.link!)!
-//        let image : UIImage = postImageView.image!
-//            let activityViewController : UIActivityViewController = UIActivityViewController(
-//                activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
-//            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
-//            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
-//        if #available(iOS 13.0, *) {
-//            activityViewController.activityItemsConfiguration = [
-//                UIActivity.ActivityType.message
-//            ] as? UIActivityItemsConfigurationReading
-//        } else {
-//        }
-//            activityViewController.excludedActivityTypes = [
-//                UIActivity.ActivityType.postToWeibo,
-//                UIActivity.ActivityType.print,
-//                UIActivity.ActivityType.assignToContact,
-//                UIActivity.ActivityType.saveToCameraRoll,
-//                UIActivity.ActivityType.addToReadingList,
-//                UIActivity.ActivityType.postToFlickr,
-//                UIActivity.ActivityType.postToVimeo,
-//                UIActivity.ActivityType.postToTencentWeibo,
-//                UIActivity.ActivityType.postToFacebook,
-//                UIActivity.ActivityType.airDrop,
-//                UIActivity.ActivityType.mail,
-//                UIActivity.ActivityType.postToTwitter
-//            ]
-//        if #available(iOS 13.0, *) {
-//            activityViewController.isModalInPresentation = true
-//        } else {
-//        }
-//            self.present(activityViewController, animated: true, completion: nil)
-//    }
+    //    @objc func actionTapped(sender: UIBarButtonItem) {
+    //        let firstActivityItem = postTitleLabel.text
+    //        let secondActivityItem : NSURL = NSURL(string: ax.link!)!
+    //        let image : UIImage = postImageView.image!
+    //            let activityViewController : UIActivityViewController = UIActivityViewController(
+    //                activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
+    //            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
+    //            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+    //        if #available(iOS 13.0, *) {
+    //            activityViewController.activityItemsConfiguration = [
+    //                UIActivity.ActivityType.message
+    //            ] as? UIActivityItemsConfigurationReading
+    //        } else {
+    //        }
+    //            activityViewController.excludedActivityTypes = [
+    //                UIActivity.ActivityType.postToWeibo,
+    //                UIActivity.ActivityType.print,
+    //                UIActivity.ActivityType.assignToContact,
+    //                UIActivity.ActivityType.saveToCameraRoll,
+    //                UIActivity.ActivityType.addToReadingList,
+    //                UIActivity.ActivityType.postToFlickr,
+    //                UIActivity.ActivityType.postToVimeo,
+    //                UIActivity.ActivityType.postToTencentWeibo,
+    //                UIActivity.ActivityType.postToFacebook,
+    //                UIActivity.ActivityType.airDrop,
+    //                UIActivity.ActivityType.mail,
+    //                UIActivity.ActivityType.postToTwitter
+    //            ]
+    //        if #available(iOS 13.0, *) {
+    //            activityViewController.isModalInPresentation = true
+    //        } else {
+    //        }
+    //            self.present(activityViewController, animated: true, completion: nil)
+    //    }
     func setUpTableView() {
         tjeraTableView.delegate = self
         tjeraTableView.dataSource = self

@@ -118,7 +118,7 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
             shnet.categories.contains(7)
         })
         
-
+        
         
     }
     

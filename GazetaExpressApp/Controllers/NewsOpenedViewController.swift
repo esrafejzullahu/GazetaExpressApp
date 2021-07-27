@@ -35,10 +35,10 @@ class NewsOpenedViewController: UIViewController, UITableViewDelegate, UITableVi
         teTjeraTableView.reloadData()
         postImageView.sd_setImage(with: URL(string: (categoryPost._embedded?.wpfeaturedmedia[0].source_url) as! String), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
         getTimeForPost()
-
+        
         self.webView.navigationDelegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(actionTapped))
-       
+        
         let htmlString = "<head><meta name=\"viewport\" content=\"initial-scale=1, user-scalable=no, width=device-width\"/><link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'><style>body {font-family: 'Raleway';font-size: 15px;} @media (prefers-color-scheme: dark) { body {color: white;}</style></head><body>" + (categoryPost.content?.rendered ?? "") + "</body>"
         
         webView.loadHTMLString(htmlString, baseURL: nil)
@@ -51,14 +51,14 @@ class NewsOpenedViewController: UIViewController, UITableViewDelegate, UITableVi
             self.webViewHeightConstraint.constant = webView.scrollView.contentSize.height
         }
     }
-
+    
     func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: nil, completion: {_ in
-        //Reset Frame of Webview
+            //Reset Frame of Webview
             self.webView.evaluateJavaScript("location.reload();")
-   })
-   }
-
+        })
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         guard let tracker = GAI.sharedInstance().defaultTracker else { return }
         tracker.set(kGAIScreenName, value: self.categoryPost.slug)

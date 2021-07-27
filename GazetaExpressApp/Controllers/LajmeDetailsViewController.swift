@@ -95,9 +95,9 @@ class LajmeDetailsViewController: UIViewController, UICollectionViewDelegate, UI
         print("asd")
         self.dismiss(animated:true) {
             let st = UIStoryboard(name: "Main", bundle: nil)
-             let TabViewController = st.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
-             TabViewController.selectedIndex = 0
-             UIApplication.shared.keyWindow?.rootViewController = TabViewController
+            let TabViewController = st.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
+            TabViewController.selectedIndex = 0
+            UIApplication.shared.keyWindow?.rootViewController = TabViewController
             self.navigationController?.popToRootViewController(animated: true)
         }
         //navigationController?.popToViewController((self.navigationController?.viewControllers[1]) as! MainViewController, animated: true)

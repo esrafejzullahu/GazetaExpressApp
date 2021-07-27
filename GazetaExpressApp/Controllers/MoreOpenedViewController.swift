@@ -9,7 +9,7 @@
 import UIKit
 
 class MoreOpenedViewController: UIViewController {
-
+    
     @IBOutlet weak var settingsNameLabel: UILabel!
     @IBOutlet weak var settingsDescTextView: UITextView!
     
@@ -21,5 +21,5 @@ class MoreOpenedViewController: UIViewController {
         settingsDescTextView.text = item.moreDesc
         
     }
-
+    
 }

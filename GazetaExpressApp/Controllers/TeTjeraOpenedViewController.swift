@@ -40,13 +40,13 @@ class TeTjeraOpenedViewController: UIViewController, WKNavigationDelegate {
             self.webViewHeight.constant = webView.scrollView.contentSize.height
         }
     }
-
+    
     func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: nil, completion: {_ in
-        //Reset Frame of Webview
+            //Reset Frame of Webview
             self.webView.evaluateJavaScript("location.reload();")
-   })
-   }
+        })
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         guard let tracker = GAI.sharedInstance().defaultTracker else { return }
@@ -55,7 +55,7 @@ class TeTjeraOpenedViewController: UIViewController, WKNavigationDelegate {
         guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
         tracker.send(builder.build() as [NSObject : AnyObject])
     }
-
+    
     @objc func actionTapped(sender: UIBarButtonItem) {
         let firstActivityItem = titleOfPostLabel.text
         let secondActivityItem : NSURL = NSURL(string: post.link!)!

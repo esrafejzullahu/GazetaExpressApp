@@ -43,16 +43,16 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
     func populateTableView(){
         moreItems.append(MoreItem(moreLabel: "About Us", moreDesc: """
                     Gazeta Express është portali më i lexuar, jo vetëm në trojet shqiptare por edhe në gjithë Ballkanin. Gazeta ka lexues të rregullt edhe në vendet e perëndimit, si Zvicër, Gjermani, Austri e madje edhe në SHBA.
-
+                    
                     Express sjell për lexuesit lajme në kohë reale, për të gjitha zhvillimet në vend dhe në botë, në të gjitha fushat për të cilat janë të interesuar.
-
+                    
                     E themeluar që nga shkurti i vitit 2005 si pjesë e Media Works, Gazeta Express ka bërë revolucion edhe kur ka vendosur që të ‘shuajë’ gazetën e shtypur dhe të fillojë vetëm me publikimet ‘online’ që nga viti 2013, duke qenë gjithmonë një hap para kohës.
-
+                    
                     Me Gazetën Express mund të mbaheni të informuar përmes:
                     Website:   https://www.gazetaexpress.com/
                     Instagram: https://www.instagram.com/gazetaexpress/
                     Twitter:   https://twitter.com/gazetaexpress
-
+                    
                     Për kontakt:
                     E-mail:   info@gazetaexpress.com
                     Tel:      +383 38 767676
