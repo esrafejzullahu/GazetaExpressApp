@@ -78,6 +78,15 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
             getSport()
             getRoze()
             getShnete()
+        } else if hasLaunched {
+            NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(handleAppDidBecomeActiveNotification(notification:)),
+                                                   name: UIApplication.didBecomeActiveNotification,
+                                                   object: nil)
+            DispatchQueue.main.async {
+                self.a1ImageView.sd_setImage(with: URL(string: self.ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
+                self.a1Label.text = self.ballina[0].title?.stripOutHtml()
+            }
         }
         
         print("This is: ", hasLaunched)
@@ -108,13 +117,8 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         shnete = Array(shnetat).filter({ shnet in
             shnet.categories.contains(7)
         })
-        a1ImageView.sd_setImage(with: URL(string: ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
-        a1Label.text = ballina[0].title?.stripOutHtml()
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(handleAppDidBecomeActiveNotification(notification:)),
-                                               name: UIApplication.didBecomeActiveNotification,
-                                               object: nil)
+
         
     }
     
@@ -138,10 +142,10 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
         meShumeNgaRoze.isUserInteractionEnabled = true
         meShumeNgaShneta.isUserInteractionEnabled = true
         a1button.isUserInteractionEnabled = true
+        //onRefresh()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        onRefresh()
         guard let tracker = GAI.sharedInstance().defaultTracker else { return }
         tracker.set(kGAIScreenName, value: "ballina")
         guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
@@ -185,8 +189,11 @@ class TopStoresViewController: UIViewController, UITableViewDelegate, UITableVie
                     }
                 }
                 try! self.realm.commitWrite()
-                self.a1ImageView.sd_setImage(with: URL(string: self.ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
-                self.a1Label.text = self.ballina[0].title?.stripOutHtml()
+                DispatchQueue.main.async {
+                    
+                    self.a1ImageView.sd_setImage(with: URL(string: self.ballina[0].featured_img!), placeholderImage: #imageLiteral(resourceName: "expressLogo"))
+                    self.a1Label.text = self.ballina[0].title?.stripOutHtml()
+                }
                 self.ballinaTableView.reloadData()
                 self.topNewsTableView.reloadData()
             case .failure(let error):

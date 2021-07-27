@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         gai.trackUncaughtExceptions = true
         
         
-        //OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+        OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("8bf09b6b-a4e6-49d8-b36d-5bbadcb02fd7")
