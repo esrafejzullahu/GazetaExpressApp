@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import OneSignal
 import GoogleMobileAds
+import Firebase
 
 @available(iOS 13.0, *)
 @available(iOS 13.0, *)
@@ -46,9 +47,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("User accepted notifications: \(accepted)")
             
         })
-        return true
-    }
-    
+        
+        let osNotificationOpenedBlock: OSNotificationOpenedBlock = { [self] result in
+            let notification: OSNotification = result.notification
+            print("launchURL: ", notification.launchURL ?? "no launch url")
+            if let appUrl = notification.launchURL {
+                print(appUrl)
+                let storyboard = UIStoryboard(name: "Splash", bundle: nil)
+                // if your app is using the navbar controller within the tabbar controller
+                if let initialViewController = storyboard.instantiateInitialViewController() as? UIViewController, self.window?.rootViewController == initialViewController {
+                    let notif = initialViewController.navigationController?.pushViewController(NotificationViewController(), animated: true) as? UIViewController
+                    print(notif)
+                }
+            }
+            }
+            OneSignal.setNotificationOpenedHandler(osNotificationOpenedBlock)
+        
+        
+        
+        FirebaseApp.configure()
+            return true
+        }
     
     // MARK: UISceneSession Lifecycle
     
